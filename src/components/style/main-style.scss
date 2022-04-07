@@ -11,15 +11,49 @@ a {
     text-decoration: none;
 }
 
-button {
+button.green {
     padding: 0.5rem 1rem;
     color: white;
     background-image: linear-gradient(to right, #b0f89b, #00d9a6);
     box-shadow: 3px 3px 20px 1px #02ffc4;
 }
 
-button:hover {
+button.green:hover {
 
     background-image: linear-gradient(to right, #00000073, #000000E6);
     box-shadow: 3px 3px 20px 1px #000000b3;
+}
+
+
+button.gray {
+    padding: 0.5rem 1.5rem;
+    color: white;
+    background-image: linear-gradient(to right, #00000073, #000000E6);
+    /*   box-shadow: 3px 3px 20px 1px #000000b3; */
+
+}
+
+.text_color_color_primary {
+    color: $text_color_color_primary;
+}
+
+.bg_primary {
+    background-color: #FAFAFA;
+}
+
+.decoration-style-mini::before {
+    content: "";
+    width: 8px;
+    height: 4px;
+    display: block;
+    background-image: linear-gradient(to right, #b0f89b, #00d9a6);
+    padding-left: 0.2rem;
+}
+
+.decoration-style::after {
+    content: "";
+    width: 33px;
+    height: 4px;
+    display: block;
+    background-image: linear-gradient(to right, #b0f89b, #00d9a6);
 }

@@ -18,8 +18,11 @@
           </li>
         </ul>
       </div>
+
       <div class="d-flex">
-        <button class="rounded-pill border-0" type="submit">purchase</button>
+        <button class="rounded-pill border-0 green" type="submit">
+          purchase
+        </button>
         <span class="nav-link"><a href="#">search</a> </span>
       </div>
     </div>
@@ -29,6 +32,7 @@
 <script>
 export default {
   name: "HomeHeaderNav",
+
   data() {
     return {
       navLink: [

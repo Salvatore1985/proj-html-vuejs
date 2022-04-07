@@ -1,10 +1,16 @@
 <template>
-  <div class="text-center">Main</div>
+  <section>
+    <Carousel />
+  </section>
 </template>
 
 <script>
+import Carousel from "../components/Main/Carousel.vue";
 export default {
   name: "HomeMain",
+  components: {
+    Carousel,
+  },
 };
 </script>
 
