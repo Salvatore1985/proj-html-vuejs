@@ -1,8 +1,14 @@
 <template>
   <div id="app">
-    <Header />
-    <Main />
-    <Footer />
+    <header>
+      <Header />
+    </header>
+    <main>
+      <Main />
+    </main>
+    <footer>
+      <Footer />
+    </footer>
   </div>
 </template>
 

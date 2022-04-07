@@ -10,3 +10,16 @@ li {
 a {
     text-decoration: none;
 }
+
+button {
+    padding: 0.5rem 1rem;
+    color: white;
+    background-image: linear-gradient(to right, #b0f89b, #00d9a6);
+    box-shadow: 3px 3px 20px 1px #02ffc4;
+}
+
+button:hover {
+
+    background-image: linear-gradient(to right, #00000073, #000000E6);
+    box-shadow: 3px 3px 20px 1px #000000b3;
+}
