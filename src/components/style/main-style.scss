@@ -59,3 +59,17 @@ button.gray {
     border-radius: 1.8rem;
     background-image: linear-gradient(to right, #b0f89b, #00d9a6);
 }
+
+.decoration-style-point::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    display: block;
+    border-radius: 50%;
+    background-color: #00d9a6;
+    position: absolute;
+    left: -10px;
+    top: 40%;
+    transform: translate(-50%);
+
+}

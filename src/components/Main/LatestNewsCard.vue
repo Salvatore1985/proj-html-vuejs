@@ -19,7 +19,9 @@
                 <li>
                   <div class="px-2">
                     <h6 class="pt-5">{{ img.date }}</h6>
-                    <h4>{{ img.new }}</h4>
+                    <h4 class="position-relative">
+                      <span class="decoration-style-point"></span>{{ img.new }}
+                    </h4>
                   </div>
                 </li>
               </ul>
@@ -59,6 +61,9 @@ div {
     height: 100%;
     border-radius: 0.5rem;
   }
+}
+h6 {
+  color: gray;
 }
 div#wrapped-new {
   background-color: white;
