@@ -2,17 +2,20 @@
   <section>
     <Carousel />
     <YourWebsite />
+    <OurMissions />
   </section>
 </template>
 
 <script>
 import Carousel from "../components/Main/Carousel.vue";
 import YourWebsite from "../components/Main/YourWebsite.vue";
+import OurMissions from "../components/Main/OurMissions.vue";
 export default {
   name: "HomeMain",
   components: {
     Carousel,
     YourWebsite,
+    OurMissions,
   },
 };
 </script>

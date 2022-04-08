@@ -1,5 +1,5 @@
 <template>
-  <section class="bg_primary">
+  <section class="">
     <div class="container-fluid">
       <div class="row align-items-center">
         <div class="col-5 d-flex flex-column justify-content-center">
