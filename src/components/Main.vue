@@ -3,6 +3,7 @@
     <Carousel />
     <YourWebsite />
     <OurMissions />
+    <ProjectsMain />
   </section>
 </template>
 
@@ -10,12 +11,14 @@
 import Carousel from "../components/Main/Carousel.vue";
 import YourWebsite from "../components/Main/YourWebsite.vue";
 import OurMissions from "../components/Main/OurMissions.vue";
+import ProjectsMain from "../components/Main/ProjectsMain.vue";
 export default {
   name: "HomeMain",
   components: {
     Carousel,
     YourWebsite,
     OurMissions,
+    ProjectsMain,
   },
 };
 </script>
