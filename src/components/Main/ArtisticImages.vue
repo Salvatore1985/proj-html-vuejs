@@ -22,6 +22,7 @@
             />
           </div>
           <div id="wrapped-option">
+            <!-- lista option -->
             <ul>
               <li
                 class="py-1"
@@ -36,6 +37,11 @@
                 </a>
               </li>
             </ul>
+          </div>
+          <div class="my-btn">
+            <button class="rounded-pill border-0 green px-4" type="submit">
+              read more
+            </button>
           </div>
         </div>
       </div>
@@ -134,5 +140,8 @@ ul {
   position: absolute;
   top: 11.4rem;
   right: 0;
+}
+.my-btn {
+  padding: 8rem 0 12rem 0;
 }
 </style>
