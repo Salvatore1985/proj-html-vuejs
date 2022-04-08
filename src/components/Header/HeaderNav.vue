@@ -2,7 +2,7 @@
   <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container-fluid px-5">
       <a class="navbar-brand" href="#">
-        <img src="@/assets/images/cropped-Group-39-2x.png" alt="" />
+        <img src="./assets/images/cropped-Group-39-2x.png" alt="" />
       </a>
 
       <div class="collapse navbar-collapse flex-grow-0 text-uppercase">
@@ -69,7 +69,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-@import "@/components/style/main-style.scss";
+@import "../style/main-style.scss";
 .navbar {
   background-color: $brand_secondary;
   height: $header_nav;

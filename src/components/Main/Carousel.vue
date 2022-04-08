@@ -51,7 +51,7 @@
 </template>
 
 <script>
-import Decoration from "@/components/ComponentsDecoration/Decoration.vue";
+import Decoration from "../ComponentsDecoration/Decoration.vue";
 export default {
   name: "MainCarousel",
   components: {

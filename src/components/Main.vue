@@ -1,15 +1,18 @@
 <template>
   <section>
     <Carousel />
+    <YourWebsite />
   </section>
 </template>
 
 <script>
 import Carousel from "../components/Main/Carousel.vue";
+import YourWebsite from "../components/Main/YourWebsite.vue";
 export default {
   name: "HomeMain",
   components: {
     Carousel,
+    YourWebsite,
   },
 };
 </script>

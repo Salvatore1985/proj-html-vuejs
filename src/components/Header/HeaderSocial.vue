@@ -63,7 +63,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-@import "@/components/style/main-style.scss";
+@import "../style/main-style.scss";
 .header-social {
   background-color: $color_primary;
   height: $header_social;
