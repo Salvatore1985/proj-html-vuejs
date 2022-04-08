@@ -1,7 +1,7 @@
 <template>
   <div>
     <button class="rounded-pill border-0" type="submit">
-      {{ textBtn(text) }}
+      {{ textbtn }}
     </button>
   </div>
 </template>
@@ -9,14 +9,10 @@
 <script>
 export default {
   name: "ButtonSingle",
+  props: ["textbtn"],
 
   data() {
     return {};
-  },
-  methods: {
-    textBtn(text) {
-      this.$emit("textBtn", text);
-    },
   },
 };
 </script>

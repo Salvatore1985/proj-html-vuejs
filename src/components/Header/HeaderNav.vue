@@ -20,6 +20,7 @@
       </div>
 
       <div class="d-flex">
+        <!--  <Button class="green" :textbtn="'purchase'" /> -->
         <button class="rounded-pill border-0 green" type="submit">
           purchase
         </button>
@@ -30,9 +31,12 @@
 </template>
 
 <script>
+/* import Button from "../Button/Button.vue"; */
 export default {
   name: "HomeHeaderNav",
-
+  components: {
+    /*     Button, */
+  },
   data() {
     return {
       navLink: [

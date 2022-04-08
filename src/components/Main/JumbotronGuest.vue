@@ -1,4 +1,5 @@
 <template>
+  <!-- JumbotronGuest -->
   <section class="position-relative">
     <div class="my-bg-guest"></div>
     <div class="text-center">
@@ -30,7 +31,7 @@ export default {
 <style lang="scss" scoped>
 section {
   div.my-bg-guest {
-    width: 100vw;
+    /*  width: 100vw; */
     height: 800px;
     background-image: url("@/assets/images/four-businesspeople-in-a-boardroom-with-paperwork-PC4V8H4.jpg");
     background-position: center;
@@ -68,7 +69,8 @@ img {
   display: block;
   width: 100%;
   height: 100%;
-  background-color: rgba(17, 13, 7, 0.8);
+
+  background-color: rgba(2, 1, 1, 0.918);
   position: absolute;
   top: 0;
   left: 0;

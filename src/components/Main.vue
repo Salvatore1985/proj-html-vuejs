@@ -5,7 +5,9 @@
     <OurMissions />
     <ProjectsMain />
     <ArtisticImages />
+    <!-- JumbotronGuest -->
     <JumbotronGuest />
+    <LatestNews />
   </section>
 </template>
 
@@ -16,6 +18,7 @@ import OurMissions from "../components/Main/OurMissions.vue";
 import ProjectsMain from "../components/Main/ProjectsMain.vue";
 import ArtisticImages from "../components/Main/ArtisticImages.vue";
 import JumbotronGuest from "../components/Main/JumbotronGuest.vue";
+import LatestNews from "../components/Main/LatestNews.vue";
 export default {
   name: "HomeMain",
   components: {
@@ -25,6 +28,7 @@ export default {
     ProjectsMain,
     ArtisticImages,
     JumbotronGuest,
+    LatestNews,
   },
 };
 </script>
