@@ -1,9 +1,9 @@
 <template>
   <div class="d-flex flex-wrap align-content-center">
     <section class="p-3 shadow" v-for="(card, index) in listCard" :key="index">
-      <p>{{ card.icons }}</p>
-      <h4>{{ card.text }}</h4>
-      <p>
+      <p class="p-3">{{ card.icons }}</p>
+      <h4 class="p-3">{{ card.text }}</h4>
+      <p class="p-3">
         {{ card.description }}
       </p>
     </section>
