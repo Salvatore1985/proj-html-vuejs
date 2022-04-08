@@ -5,14 +5,14 @@
         <div class="col-5 ps-5 py-5">
           <div>
             <h5 class="text-text-uppercase">17 years of experience</h5>
-            <h1>We Are a</h1>
+            <h1 class="py-3">We Are a</h1>
             <h1>
               Web Design <span class="text_color_color_primary">Agency</span>
             </h1>
           </div>
           <!-- Aggiunto componente style  -->
           <Decoration class="py-3" />
-          <div>
+          <div class="py-4">
             <p class="py-4">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
               voluptatem explicabo voluptate nobis? Cum praesentium optio
@@ -97,7 +97,7 @@ export default {
   z-index: 1;
   div {
     h1 {
-      font-size: 4.5rem;
+      font-size: 3.8rem;
     }
     h5 {
       color: #00d9a6;
