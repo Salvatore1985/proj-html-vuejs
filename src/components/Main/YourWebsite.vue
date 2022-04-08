@@ -2,7 +2,7 @@
   <section class="bg_primary">
     <div class="container-fluid">
       <div class="row align-items-center">
-        <div class="col-5 ps-5 py-5">
+        <div class="col-5 d-flex flex-column justify-content-center">
           <div>
             <h1 class="py-3">
               We Are a Here To Marke Your
@@ -19,30 +19,16 @@
               read more
             </button>
           </div>
-          <!-- Cards -->
-          <div
-            class="py-5 d-flex justify-content-between align-items-center"
-          ></div>
         </div>
         <div class="col-7">
-          <div class="container">
-            <div class="row">
-              <div class="col-6">
-                <Card />
-              </div>
-              <div class="col-6">
-                <Card />
-              </div>
-              <div class="col-6">
-                <Card />
-              </div>
-              <div class="col-6">
-                <Card />
+          <div class="container-fluid">
+            <div class="row my-card">
+              <div class="col-12 d-flex justify-content-center">
+                <!-- card -->
+                <Card :listCard="cardsList" />
               </div>
             </div>
           </div>
-
-          <div class="cover-carousel"></div>
         </div>
       </div>
     </div>
@@ -72,6 +58,32 @@ export default {
         {
           id: "03",
           url: "Group-40-2x.png",
+        },
+      ],
+      cardsList: [
+        {
+          icons: "icons",
+          text: "speed optimazation",
+          description:
+            " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio porro officiis itaque nesciunt, minima laudantium,",
+        },
+        {
+          icons: "icons",
+          text: "cloud solutions",
+          description:
+            " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio porro officiis itaque nesciunt, minima laudantium,",
+        },
+        {
+          icons: "icons",
+          text: "website design",
+          description:
+            " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio porro officiis itaque nesciunt, minima laudantium,",
+        },
+        {
+          icons: "icons",
+          text: "online marketing",
+          description:
+            " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio porro officiis itaque nesciunt, minima laudantium,",
         },
       ],
     };
@@ -104,6 +116,9 @@ export default {
       color: #00d9a6;
     }
   }
+}
+.my-card {
+  height: $you_web_height;
 }
 </style>
 
