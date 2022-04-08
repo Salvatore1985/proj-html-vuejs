@@ -4,6 +4,7 @@
     <YourWebsite />
     <OurMissions />
     <ProjectsMain />
+    <ArtisticImages />
   </section>
 </template>
 
@@ -12,6 +13,7 @@ import Carousel from "../components/Main/Carousel.vue";
 import YourWebsite from "../components/Main/YourWebsite.vue";
 import OurMissions from "../components/Main/OurMissions.vue";
 import ProjectsMain from "../components/Main/ProjectsMain.vue";
+import ArtisticImages from "../components/Main/ArtisticImages.vue";
 export default {
   name: "HomeMain",
   components: {
@@ -19,6 +21,7 @@ export default {
     YourWebsite,
     OurMissions,
     ProjectsMain,
+    ArtisticImages,
   },
 };
 </script>
