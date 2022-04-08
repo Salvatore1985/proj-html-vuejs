@@ -2,7 +2,15 @@
   <section>
     <div class="container-fluid py-3">
       <div class="row">
-        <div class="col-12 justify-content-center d-flex flex-wrap">
+        <div
+          class="
+            col-12
+            justify-content-center
+            d-flex
+            flex-wrap
+            position-relative
+          "
+        >
           <div
             class="card border-0"
             v-for="(img, index) in imagArtistList"
@@ -12,6 +20,22 @@
               :src="require(`@/assets/images/${img.src}`)"
               :alt="img.imgName"
             />
+          </div>
+          <div id="wrapped-option">
+            <ul>
+              <li
+                class="py-1"
+                v-for="(element, index) in optionImg"
+                :key="index + 'buy'"
+              >
+                <a :href="element.url">
+                  <div class="d-flex align-items-center px-2">
+                    <span class="p-2">{{ element.icons }}</span>
+                    <span class="">{{ element.text }}</span>
+                  </div>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -66,6 +90,23 @@ export default {
           id: "8",
         },
       ],
+      optionImg: [
+        {
+          icons: "icons",
+          text: "browse demos",
+          url: "#",
+        },
+        {
+          icons: "icons",
+          text: "buy now!",
+          url: "#",
+        },
+        {
+          icons: "icons",
+          text: "export section",
+          url: "#",
+        },
+      ],
     };
   },
 };
@@ -77,5 +118,21 @@ img {
   height: 100%;
   margin: 0.25rem;
   border-radius: 0.5rem;
+}
+ul {
+  li {
+    div {
+      background-color: rgba(134, 134, 134, 0.8);
+      border-radius: 1rem 0 0 1rem;
+      span {
+        color: #dbdbdb;
+      }
+    }
+  }
+}
+#wrapped-option {
+  position: absolute;
+  top: 11.4rem;
+  right: 0;
 }
 </style>
