@@ -31,7 +31,7 @@
               <div
                 @click="getSlide(index)"
                 :class="visibleCover == index ? 'active' : ''"
-                class="btn-carousel rounded-pill"
+                class="btn-carousel rounded-pill fs-4 px-3"
                 v-for="(element, index) in groupList"
                 :key="index + 'group'"
               >
@@ -49,7 +49,7 @@
             :key="index"
           >
             <img
-              :src="require(`@/assets/images/${cover.url}`)"
+              :src="require(`../../assets/images/${cover.url}`)"
               :alt="cover.text"
             />
           </div>
@@ -62,6 +62,7 @@
 <script>
 import Decoration from "../ComponentsDecoration/Decoration.vue";
 import Button from "../Button/Button.vue";
+
 export default {
   name: "MainCarousel",
   components: {

@@ -12,7 +12,7 @@
       </p>
       <div class="py-4">
         <img
-          src="@/assets/images/businesswoman-analysing-document-P8WSNMC-1024x820.jpg"
+          src="../../assets/images/businesswoman-analysing-document-P8WSNMC-1024x820.jpg"
           alt=""
         />
       </div>
@@ -33,7 +33,7 @@ section {
   div.my-bg-guest {
     /*  width: 100vw; */
     height: 800px;
-    background-image: url("@/assets/images/four-businesspeople-in-a-boardroom-with-paperwork-PC4V8H4.jpg");
+    background-image: url("../../assets/images/four-businesspeople-in-a-boardroom-with-paperwork-PC4V8H4.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

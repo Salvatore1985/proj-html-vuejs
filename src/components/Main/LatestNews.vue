@@ -12,7 +12,7 @@
 
 <script>
 import Decoration from "../ComponentsDecoration/Decoration.vue";
-import LatestNewsCard from "../Main/LatestNewsCard.vue";
+import LatestNewsCard from "../Main/LatestNews/LatestNewsCard.vue";
 export default {
   nome: "LatestNews",
   components: {

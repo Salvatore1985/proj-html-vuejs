@@ -2,7 +2,7 @@
   <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container-fluid px-5">
       <a class="navbar-brand" href="#">
-        <img src="@/assets/images/cropped-Group-39-2x.png" alt="" />
+        <img src="../../assets/images/cropped-Group-39-2x.png" alt="" />
       </a>
 
       <div class="collapse navbar-collapse flex-grow-0 text-uppercase">

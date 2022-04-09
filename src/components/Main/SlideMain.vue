@@ -19,7 +19,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "@/components/style/main-style.scss";
+@import "../../components/style/main-style.scss";
 
 .cover-carousel {
   height: $carousel_height;

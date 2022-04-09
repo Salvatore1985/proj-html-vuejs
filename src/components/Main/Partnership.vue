@@ -7,12 +7,22 @@
           <CardPartnership :listCard="cardsList" />
         </div>
       </div>
+      <div class="col-12 px-3 pb-5">
+        <ul class="d-flex justify-content-between" id="my-client">
+          <li v-for="(client, index) in listClient" :key="index + 'client'">
+            <img
+              :src="require(`../../assets/images/${client}.png`)"
+              :alt="index"
+            />
+          </li>
+        </ul>
+      </div>
     </div>
   </section>
 </template>
 
 <script>
-import CardPartnership from "./CardPartnership.vue";
+import CardPartnership from "../Main/Partnership/CardPartnership.vue";
 export default {
   name: "MainPartnership",
   components: {
@@ -20,8 +30,17 @@ export default {
   },
   data() {
     return {
+      listClient: [
+        "client-1-2x",
+        "client-9-2x",
+        "client-7-2x",
+        "client-3-2x",
+        "client-4-2x",
+        "client-5-2x",
+      ],
       cardsList: [
         {
+          input: "text",
           bgColor: "black",
           request: "are you ready?",
           text: "strat a new project",
@@ -29,6 +48,7 @@ export default {
             " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio porro officiis itaque nesciunt, minima laudantium,",
         },
         {
+          input: "button",
           bgColor: "green",
           request: "what are you waiting for?",
           text: "let's talk about work",
@@ -38,26 +58,18 @@ export default {
       ],
     };
   },
-  methods: {
-    changeImg(index) {
-      /* console.log(this.groupList[index].id); */
-      if (this.groupList[index].id == "01") {
-        console.log("primo");
-      } else if (this.groupList[index].id == "02") {
-        console.log("secondo");
-      } else {
-        console.log("terzo");
-      }
-    },
-  },
+  methods: {},
 };
 </script>
 
 <style lang="scss" scoped>
-@import "@/components/style/main-style.scss";
+@import "../../components/style/main-style.scss";
 
 .row {
   height: $partenership;
+}
+#my-client {
+  padding-bottom: 3.5rem;
 }
 </style>
 

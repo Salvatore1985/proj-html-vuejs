@@ -35,7 +35,7 @@
 
 <script>
 import Decoration from "../ComponentsDecoration/Decoration.vue";
-import Card from "../Main/Card.vue";
+import Card from "./YourWebsite/Card.vue";
 import Button from "../Button/Button.vue";
 export default {
   name: "MainYourWeb",

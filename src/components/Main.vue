@@ -1,13 +1,20 @@
 <template>
   <section>
+    <!-- sezione 1 -->
     <Carousel />
+    <!-- sezione 2 -->
     <YourWebsite />
+    <!-- sezione 3 -->
     <OurMissions />
+    <!-- sezione 4 -->
     <ProjectsMain />
+    <!-- sezione 5 -->
     <ArtisticImages />
-    <!-- JumbotronGuest -->
+    <!-- sezione 6 -->
     <JumbotronGuest />
+    <!-- sezione 7 -->
     <LatestNews />
+    <!-- sezione 8 -->
     <Partnership />
   </section>
 </template>

@@ -42,7 +42,7 @@
 </template>
 
 <script>
-import Button from "../Button/Button.vue";
+import Button from "../../Button/Button.vue";
 export default {
   name: "LatestNewsCard",
   props: ["listCard"],

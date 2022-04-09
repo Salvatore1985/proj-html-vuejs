@@ -32,7 +32,7 @@
 
 <script>
 import Decoration from "../ComponentsDecoration/Decoration.vue";
-import ImgOurMissions from "./ImgOurMissions.vue";
+import ImgOurMissions from "./OurMissions/ImgOurMissions.vue";
 import Button from "../Button/Button.vue";
 export default {
   name: "MainOurMissions",
@@ -49,7 +49,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "@/components/style/main-style.scss";
+@import "../../components/style/main-style.scss";
 .col-5 {
   height: $our_missions;
 
