@@ -1,10 +1,16 @@
 <template>
-  <div class="text-center">Footer</div>
+  <footer>
+    <FooterNav />
+  </footer>
 </template>
 
 <script>
+import FooterNav from "./Footer/FooterNav.vue";
 export default {
   name: "HomeFooter",
+  components: {
+    FooterNav,
+  },
 };
 </script>
 
