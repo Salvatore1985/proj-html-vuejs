@@ -1,10 +1,9 @@
 <template>
-  <section>
+  <section class="p-2">
     <h3>{{ wrappedLocation[0] }}</h3>
     <Decoration class="py-3" />
-    <div class="ps-0 pt-2">
+    <div class="ps-0 w-100">
       <img
-        class="img-fluid"
         :src="require(`@/assets/images/${wrappedLocation[1].img}.png`)"
         alt=""
       />
@@ -23,5 +22,13 @@ export default {
 };
 </script>
 
-<style>
+
+<style lang="scss" scoped>
+section {
+  height: 380px;
+
+  img {
+    width: 100%;
+  }
+}
 </style>

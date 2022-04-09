@@ -1,17 +1,17 @@
 <template>
   <div>
     <div class="container-fluid" id="footer-nav">
-      <div class="row align-items-center">
-        <div class="col-3 p-5">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-12">
           <LogoFooterCorporate :wrappedLogo="wrappedLogo" />
         </div>
-        <div class="col-3 p-5">
+        <div class="col-12">
           <LinkFooter :wrappedLink="wrappedLink" />
         </div>
-        <div class="col-3 p-5">
+        <div class="col-12">
           <ContactFooter :wrappedcontact="wrappedcontact" />
         </div>
-        <div class="col-3 p-5">
+        <div class="col-12">
           <LocationFooter :wrappedLocation="wrappedLocation" />
         </div>
       </div>
@@ -91,5 +91,8 @@ export default {
 #footer-nav,
 .row {
   height: 500px;
+  .col-12 {
+    width: calc(100% / 4);
+  }
 }
 </style>

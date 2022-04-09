@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="p-2">
     <h3>{{ wrappedLink[0] }}</h3>
     <Decoration class="py-3" />
     <ul class="py-4 ps-0">
@@ -21,8 +21,7 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-/* section {
-  max-height: 380px;
-  border: 1px solid red;
-} */
+section {
+  height: 380px;
+}
 </style>

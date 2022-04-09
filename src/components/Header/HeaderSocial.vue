@@ -17,15 +17,7 @@
           </div>
           <!-- social -->
           <div class="col-6 d-flex align-items-center justify-content-end">
-            <ul class="d-flex" id="my-icons">
-              <li
-                class="px-2"
-                v-for="(icons, index) in iconsList"
-                :key="index + 'logo'"
-              >
-                <a :href="icons.url"><i :class="icons.icons"></i></a>
-              </li>
-            </ul>
+            <Social :colorText="'text-white'" />
           </div>
         </div>
       </div>
@@ -35,8 +27,12 @@
 </template>
 
 <script>
+import Social from "../Social.vue";
 export default {
   name: "HomeHeaderSocial",
+  components: {
+    Social,
+  },
   data() {
     return {
       codPage: [
@@ -44,24 +40,6 @@ export default {
           page: "(001)",
           codPrimary: "88451234",
           codSecondary: "88455438",
-        },
-      ],
-      iconsList: [
-        {
-          alt: "facebook",
-          icons: "fab fa-facebook-f",
-          url: "#",
-        },
-        {
-          alt: "logo-twitter",
-          icons: "fab fa-twitter",
-          url: "#",
-        },
-
-        {
-          alt: "pinterest",
-          icons: "fab fa-pinterest-p",
-          url: "#",
         },
       ],
     };
@@ -79,12 +57,5 @@ export default {
 
 .col-6 {
   height: $header_social;
-}
-
-ul#my-icons {
-  margin: auto 0;
-  a {
-    color: white;
-  }
 }
 </style>

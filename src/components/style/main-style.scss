@@ -15,7 +15,7 @@ button.green {
     padding: 0.5rem 1rem;
     color: white;
     background-image: linear-gradient(to right, #b0f89b, #00d9a6);
-    box-shadow: 3px 3px 20px 1px #02ffc4;
+    box-shadow: 3px 3px 20px 1px #56fdd6;
 }
 
 button.green:hover {
@@ -82,4 +82,8 @@ button.gray {
     top: 40%;
     transform: translate(-50%);
 
+}
+
+.my-shadow-lg {
+    box-shadow: 5px 10px 18px rgb(170, 170, 170);
 }

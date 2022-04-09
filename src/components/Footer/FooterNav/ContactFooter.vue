@@ -1,12 +1,8 @@
 <template>
-  <section>
+  <section class="p-2">
     <h3>{{ wrappedcontact[0] }}</h3>
     <Decoration class="py-3" />
-    <ul
-      class="ps-0 pt-2"
-      v-for="(element, index) in wrappedcontact"
-      :key="index"
-    >
+    <ul class="ps-0" v-for="(element, index) in wrappedcontact" :key="index">
       <li class="p-0">
         {{ element }}
       </li>
@@ -26,8 +22,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-/* section {
-  max-height: 380px;
-  border: 1px solid red;
-} */
+section {
+  height: 380px;
+}
 </style>

@@ -27,7 +27,7 @@
               facebook - instagram - youtube - twitter
             </h6>
             <!-- bottone carosello -->
-            <div class="d-flex wapped-carousel rounded-pill">
+            <div class="d-flex wapped-carousel rounded-pill my-shadow-lg">
               <div
                 @click="getSlide(index)"
                 :class="visibleCover == index ? 'active' : ''"

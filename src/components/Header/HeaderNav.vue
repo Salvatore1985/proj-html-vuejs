@@ -21,7 +21,7 @@
 
       <div class="d-flex">
         <Button :className="'green'" :textbtn="'purchase'" />
-        <span class="nav-link"
+        <span class="nav-link d-flex align-items-center"
           ><a href="#"><i class="fas fa-search"></i></a>
         </span>
       </div>
