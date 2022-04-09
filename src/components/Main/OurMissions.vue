@@ -12,7 +12,7 @@
               <span class="text_color_color_primary">missions</span>
             </h1>
           </div>
-          <!-- Aggiunto componente style  -->
+
           <!-- Aggiunto componente style  -->
           <Decoration class="py-3" />
           <div class="py-4">
@@ -22,9 +22,7 @@
               deleniti blanditiis veniam. Neque, dolorem! Asperiores accusamus
               vero quidem eaque natus reprehenderit cupiditate beatae.
             </p>
-            <button class="rounded-pill border-0 green" type="submit">
-              read more
-            </button>
+            <Button :className="'green'" :textbtn="'read more'" />
           </div>
         </div>
       </div>
@@ -35,11 +33,13 @@
 <script>
 import Decoration from "../ComponentsDecoration/Decoration.vue";
 import ImgOurMissions from "./ImgOurMissions.vue";
+import Button from "../Button/Button.vue";
 export default {
   name: "MainOurMissions",
   components: {
     Decoration,
     ImgOurMissions,
+    Button,
   },
   data() {
     return {};

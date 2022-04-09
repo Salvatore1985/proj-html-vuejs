@@ -37,9 +37,19 @@ button.gray {
     color: $text_color_color_primary;
 }
 
+/* background BG */
 .bg_primary {
     background-color: #FAFAFA;
 }
+
+.my-bg-green {
+    background-image: linear-gradient(to bottom left, #b0f89b, #00d9a6);
+}
+
+.my-bg-black-gray {
+    background-image: linear-gradient(to right, #000000a4, #000000E6);
+}
+
 
 .decoration-style-mini::before {
     content: "";

@@ -29,12 +29,11 @@
           </div>
           <div id="wrapped-new"></div>
           <div class="my-btn">
-            <button
-              class="rounded-pill border-0 gray px-4 shadow"
-              type="submit"
-            >
-              read more
-            </button>
+            <Button
+              :className="'gray'"
+              :textbtn="'veiw all post'"
+              :shadow="'shadow-lg'"
+            />
           </div>
         </div>
       </div>
@@ -43,9 +42,13 @@
 </template>
 
 <script>
+import Button from "../Button/Button.vue";
 export default {
   name: "LatestNewsCard",
   props: ["listCard"],
+  components: {
+    Button,
+  },
   data() {
     return {};
   },

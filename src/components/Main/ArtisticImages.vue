@@ -5,14 +5,14 @@
         <div
           class="
             col-12
-            justify-content-center
+            justify-content-evenly
             d-flex
             flex-wrap
             position-relative
           "
         >
           <div
-            class="card border-0"
+            class="card border-0 position-relative mb-1"
             v-for="(img, index) in imagArtistList"
             :key="index"
           >
@@ -20,6 +20,10 @@
               :src="require(`@/assets/images/${img.src}`)"
               :alt="img.imgName"
             />
+            <div class="my-bg-hover">
+              <h3>A Fomous Ferris Wheel</h3>
+              <h5>marketing</h5>
+            </div>
           </div>
           <div id="wrapped-option">
             <!-- lista option -->
@@ -39,9 +43,7 @@
             </ul>
           </div>
           <div class="my-btn">
-            <button class="rounded-pill border-0 green px-4" type="submit">
-              read more
-            </button>
+            <Button :className="'green'" :textbtn="'read more'" />
           </div>
         </div>
       </div>
@@ -50,8 +52,12 @@
 </template>
 
 <script>
+import Button from "../Button/Button.vue";
 export default {
   name: "ArtisticImages",
+  components: {
+    Button,
+  },
   data() {
     return {
       imagArtistList: [
@@ -122,7 +128,7 @@ export default {
 img {
   width: 22.8rem;
   height: 100%;
-  margin: 0.25rem;
+  /*   margin: 0.25rem; */
   border-radius: 0.5rem;
 }
 ul {
@@ -140,8 +146,33 @@ ul {
   position: absolute;
   top: 11.4rem;
   right: 0;
+  z-index: 1;
 }
 .my-btn {
   padding: 8rem 0 12rem;
+}
+.my-bg-hover {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    to top right,
+    rgba(176, 248, 155, 0.5),
+    rgba(0, 217, 166, 05)
+  );
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 0.5rem;
+  /*  margin: 0.25rem; */
+  padding: 15rem 2rem 0 2rem;
+  color: white;
+  display: none;
+}
+.card:hover .my-bg-hover {
+  display: block;
+}
+.card:hover {
+  scale: 110%;
+  z-index: 1;
 }
 </style>

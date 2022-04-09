@@ -1,10 +1,7 @@
 <template>
   <div>
     <div>
-      <button
-        :class="`text-uppercase px-5 py-3 rounded-pill border-0 ${className} ${shadow}`"
-        type="submit"
-      >
+      <button :class="`rounded-pill border-0 ${className}`" type="submit">
         {{ textbtn }}
       </button>
     </div>
@@ -14,7 +11,7 @@
 <script>
 export default {
   name: "ButtonSubmit",
-  props: ["textbtn", "className", "shadow"],
+  props: ["textbtn", "className"],
 
   data() {
     return {};

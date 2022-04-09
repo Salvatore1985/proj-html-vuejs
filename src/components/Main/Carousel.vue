@@ -19,9 +19,7 @@
               deleniti blanditiis veniam. Neque, dolorem! Asperiores accusamus
               vero quidem eaque natus reprehenderit cupiditate beatae.
             </p>
-            <button class="rounded-pill border-0 gray" type="submit">
-              read more
-            </button>
+            <Button :className="'gray'" :textbtn="'read more'" />
           </div>
 
           <div class="py-5 d-flex justify-content-between align-items-center">
@@ -63,11 +61,12 @@
 
 <script>
 import Decoration from "../ComponentsDecoration/Decoration.vue";
-
+import Button from "../Button/Button.vue";
 export default {
   name: "MainCarousel",
   components: {
     Decoration,
+    Button,
   },
   data() {
     return {

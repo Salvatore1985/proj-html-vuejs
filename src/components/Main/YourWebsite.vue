@@ -15,9 +15,7 @@
           <!-- Aggiunto componente style  -->
           <Decoration class="py-3" />
           <div class="py-4">
-            <button class="rounded-pill border-0 green" type="submit">
-              read more
-            </button>
+            <Button :className="'green'" :textbtn="'read more'" />
           </div>
         </div>
         <div class="col-7">
@@ -38,11 +36,13 @@
 <script>
 import Decoration from "../ComponentsDecoration/Decoration.vue";
 import Card from "../Main/Card.vue";
+import Button from "../Button/Button.vue";
 export default {
   name: "MainYourWeb",
   components: {
     Decoration,
     Card,
+    Button,
   },
   data() {
     return {

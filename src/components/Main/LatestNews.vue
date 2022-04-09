@@ -47,9 +47,8 @@ export default {
 </script>
 
 <style scoped lang="scss">
-/* @import "../components/style/main-style.scss"; */
 section {
-  height: 1000px;
+  /*   height: 1000px; */
   h2 {
     padding: 15rem 0 4rem 0;
     font-size: 3.5rem;

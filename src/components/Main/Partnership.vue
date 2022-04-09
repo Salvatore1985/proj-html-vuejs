@@ -1,16 +1,10 @@
 <template>
-  <section class="">
+  <section class="bg_primary">
     <div class="container-fluid">
-      <div class="row align-items-center">
-        <div class="col-7">
-          <div class="container-fluid">
-            <div class="row my-card">
-              <div class="col-12 d-flex justify-content-center">
-                <!-- card -->
-                <CardPartnership class="bg-black" :listCard="cardsList" />
-              </div>
-            </div>
-          </div>
+      <div class="row">
+        <div class="col-12">
+          <!-- card -->
+          <CardPartnership :listCard="cardsList" />
         </div>
       </div>
     </div>
@@ -28,12 +22,14 @@ export default {
     return {
       cardsList: [
         {
+          bgColor: "black",
           request: "are you ready?",
           text: "strat a new project",
           description:
             " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio porro officiis itaque nesciunt, minima laudantium,",
         },
         {
+          bgColor: "green",
           request: "what are you waiting for?",
           text: "let's talk about work",
           description:
@@ -59,20 +55,9 @@ export default {
 
 <style lang="scss" scoped>
 @import "@/components/style/main-style.scss";
-.col-5 {
-  height: $you_web_height;
-  z-index: 1;
-  div {
-    h1 {
-      font-size: 3.8rem;
-    }
-    h5 {
-      color: #00d9a6;
-    }
-  }
-}
-.my-card {
-  height: $you_web_height;
+
+.row {
+  height: $partenership;
 }
 </style>
 
