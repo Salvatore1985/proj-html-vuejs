@@ -17,7 +17,15 @@
           </div>
           <!-- social -->
           <div class="col-6 d-flex align-items-center justify-content-end">
-            <span>prova</span>
+            <ul class="d-flex" id="my-icons">
+              <li
+                class="px-2"
+                v-for="(icons, index) in iconsList"
+                :key="index + 'logo'"
+              >
+                <a :href="icons.url"><i :class="icons.icons"></i></a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -41,18 +49,18 @@ export default {
       iconsList: [
         {
           alt: "facebook",
-          icons: "logo-facebook",
+          icons: "fab fa-facebook-f",
           url: "#",
         },
         {
-          alt: "twitter",
-          icons: "logo-twitter",
+          alt: "logo-twitter",
+          icons: "fab fa-twitter",
           url: "#",
         },
 
         {
           alt: "pinterest",
-          icons: "logo-pinterest",
+          icons: "fab fa-pinterest-p",
           url: "#",
         },
       ],
@@ -71,5 +79,12 @@ export default {
 
 .col-6 {
   height: $header_social;
+}
+
+ul#my-icons {
+  margin: auto 0;
+  a {
+    color: white;
+  }
 }
 </style>

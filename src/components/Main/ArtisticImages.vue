@@ -31,7 +31,7 @@
               >
                 <a :href="element.url">
                   <div class="d-flex align-items-center px-2">
-                    <span class="p-2">{{ element.icons }}</span>
+                    <span class="p-2"> <i :class="element.icons"></i></span>
                     <span class="">{{ element.text }}</span>
                   </div>
                 </a>
@@ -98,17 +98,17 @@ export default {
       ],
       optionImg: [
         {
-          icons: "icons",
+          icons: "fas fa-th-large",
           text: "browse demos",
           url: "#",
         },
         {
-          icons: "icons",
+          icons: "fas fa-shopping-bag",
           text: "buy now!",
           url: "#",
         },
         {
-          icons: "icons",
+          icons: "fas fa-file-export",
           text: "export section",
           url: "#",
         },

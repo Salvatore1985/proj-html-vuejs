@@ -62,25 +62,25 @@ export default {
       ],
       cardsList: [
         {
-          icons: "icons",
+          icons: "fas fa-tachometer-alt",
           text: "speed optimazation",
           description:
             " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio porro officiis itaque nesciunt, minima laudantium,",
         },
         {
-          icons: "icons",
+          icons: "fas fa-cloud",
           text: "cloud solutions",
           description:
             " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio porro officiis itaque nesciunt, minima laudantium,",
         },
         {
-          icons: "icons",
+          icons: "fas fa-tablet-alt",
           text: "website design",
           description:
             " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio porro officiis itaque nesciunt, minima laudantium,",
         },
         {
-          icons: "icons",
+          icons: "far fa-clock",
           text: "online marketing",
           description:
             " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio porro officiis itaque nesciunt, minima laudantium,",

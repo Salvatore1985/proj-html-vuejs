@@ -24,7 +24,9 @@
         <button class="rounded-pill border-0 green" type="submit">
           purchase
         </button>
-        <span class="nav-link"><a href="#">search</a> </span>
+        <span class="nav-link"
+          ><a href="#"><i class="fas fa-search"></i></a>
+        </span>
       </div>
     </div>
   </nav>
@@ -77,5 +79,11 @@ export default {
 .navbar {
   background-color: $brand_secondary;
   height: $header_nav;
+}
+a {
+  color: #00d9a6;
+  i {
+    color: #00d9a6;
+  }
 }
 </style>
