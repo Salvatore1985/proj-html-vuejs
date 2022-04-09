@@ -31,18 +31,29 @@
             <!-- bottone carosello -->
             <div class="d-flex wapped-carousel rounded-pill">
               <div
+                @click="getSlide(index)"
+                :class="visibleCover == index ? 'active' : ''"
                 class="btn-carousel rounded-pill"
                 v-for="(element, index) in groupList"
                 :key="index + 'group'"
               >
-                <span @click="changeImg(index)">{{ element.id }}</span>
+                <span>{{ element.id }}</span>
               </div>
             </div>
           </div>
         </div>
         <div class="col-8 offset-4 d-flex position-absolute top-0 p-0">
-          <div class="cover-carousel">
-            <img src="@/assets/images/Group-36-2x.png" alt="" />
+          <div
+            class="cover-carousel"
+            :class="visibleCover == index ? 'active' : ''"
+            v-for="(cover, index) in groupList"
+            :index="visibleCover"
+            :key="index"
+          >
+            <img
+              :src="require(`@/assets/images/${cover.url}`)"
+              :alt="cover.text"
+            />
           </div>
         </div>
       </div>
@@ -52,6 +63,7 @@
 
 <script>
 import Decoration from "../ComponentsDecoration/Decoration.vue";
+
 export default {
   name: "MainCarousel",
   components: {
@@ -59,32 +71,30 @@ export default {
   },
   data() {
     return {
+      visibleCover: 0,
+      indexBtn: 0,
       groupList: [
         {
           id: "01",
           url: "Group-36-2x.png",
+          text: "Group-36-2x",
         },
         {
           id: "02",
           url: "Group-35-2x.png",
+          text: "Group-35-2x",
         },
         {
           id: "03",
           url: "Group-40-2x.png",
+          text: "Group-40-2x",
         },
       ],
     };
   },
   methods: {
-    changeImg(index) {
-      /* console.log(this.groupList[index].id); */
-      if (this.groupList[index].id == "01") {
-        console.log("primo");
-      } else if (this.groupList[index].id == "02") {
-        console.log("secondo");
-      } else {
-        console.log("terzo");
-      }
+    getSlide(index) {
+      this.visibleCover = index;
     },
   },
 };
@@ -125,6 +135,7 @@ export default {
 
   overflow: hidden;
   position: relative;
+  display: none;
 
   img {
     width: 1200px;
@@ -135,8 +146,10 @@ export default {
     position: absolute;
   }
 }
-
-.btn-carousel:hover {
+.cover-carousel.active {
+  display: block;
+}
+.btn-carousel.active {
   background-image: linear-gradient(to right, #00d9a6, #b0f89b);
 }
 </style>

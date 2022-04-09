@@ -8,6 +8,7 @@
     <!-- JumbotronGuest -->
     <JumbotronGuest />
     <LatestNews />
+    <Partnership />
   </section>
 </template>
 
@@ -19,6 +20,7 @@ import ProjectsMain from "../components/Main/ProjectsMain.vue";
 import ArtisticImages from "../components/Main/ArtisticImages.vue";
 import JumbotronGuest from "../components/Main/JumbotronGuest.vue";
 import LatestNews from "../components/Main/LatestNews.vue";
+import Partnership from "../components/Main/Partnership.vue";
 export default {
   name: "HomeMain",
   components: {
@@ -29,6 +31,7 @@ export default {
     ArtisticImages,
     JumbotronGuest,
     LatestNews,
+    Partnership,
   },
 };
 </script>

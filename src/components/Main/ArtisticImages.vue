@@ -142,6 +142,6 @@ ul {
   right: 0;
 }
 .my-btn {
-  padding: 8rem 0 12rem 0;
+  padding: 8rem 0 12rem;
 }
 </style>
