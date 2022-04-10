@@ -2,7 +2,7 @@
   <div class="d-flex flex-wrap align-content-center">
     <section class="p-4 shadow" v-for="(card, index) in listCard" :key="index">
       <span><i class="py-2" :class="card.icons"></i></span>
-      <h4 class="py-3">{{ card.text }}</h4>
+      <h4 class="py-3 text-capitalize">{{ card.text }}</h4>
       <p>
         {{ card.description }}
       </p>

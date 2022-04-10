@@ -20,7 +20,9 @@
                   <div class="px-2">
                     <h6 class="pt-5">{{ img.date }}</h6>
                     <h4 class="position-relative">
-                      <span class="decoration-style-point"></span>{{ img.new }}
+                      <span class="decoration-style-point text-capitalize">{{
+                        img.new
+                      }}</span>
                     </h4>
                   </div>
                 </li>

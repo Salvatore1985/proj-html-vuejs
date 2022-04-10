@@ -39,7 +39,7 @@ export default {
           logo: "cropped-Group-39-2x",
           url: "#",
           description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia maximedistinctio corporis odit blanditiis soluta ipsum optio, providentillum omnis deserunt eaque ut eum autem velit vitae culpa consequatur?Harum!",
+            "While the lovly valley teems with vapour around me, and the meridian sun strikes the upper sorfuce of the impenetrable foliage of my trees. While the lovly valley teems with vopur around me. ",
         },
       ],
       wrappedLink: [

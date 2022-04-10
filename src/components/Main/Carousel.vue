@@ -14,10 +14,10 @@
           <Decoration class="py-3" />
           <div class="py-4">
             <p class="py-4">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-              voluptatem explicabo voluptate nobis? Cum praesentium optio
-              deleniti blanditiis veniam. Neque, dolorem! Asperiores accusamus
-              vero quidem eaque natus reprehenderit cupiditate beatae.
+              Far far away, behind the word mountains, far from the countries
+              Vokalia and Consonantia, there live the blind texts. Separated
+              they live in Bookmarksgrove right at the coast of the Semantics, a
+              large language ocean. Separated they live in Bookmarksgrove.
             </p>
             <Button :className="'gray'" :textbtn="'read more'" />
           </div>
@@ -45,7 +45,6 @@
             class="cover-carousel"
             :class="visibleCover == index ? 'active' : ''"
             v-for="(cover, index) in groupList"
-            :index="visibleCover"
             :key="index"
           >
             <img

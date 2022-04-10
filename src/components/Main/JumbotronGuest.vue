@@ -4,11 +4,10 @@
     <div class="my-bg-guest"></div>
     <div class="text-center">
       <span>❝</span>
-      <p class="py-5">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur
-        doloribus sunt quisquam omnis est dolorum earum odio quibusdam fugiat,
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur
-        doloribus sunt quisquam omnis est dolorum earum odio quibusdam fugiat
+      <p class="py-5 fs-2">
+        When it comes to barbequing, there are two main schools of thought for
+        the techniques that uou can use. Freshly scrambled eggs with applewood
+        smoked bacon - are amezing!
       </p>
       <div class="py-4">
         <img
@@ -16,8 +15,8 @@
           alt=""
         />
       </div>
-      <h3>lissa durdin</h3>
-      <pre>client</pre>
+      <h3 class="text-uppercase">lissa durdin</h3>
+      <p>Client</p>
     </div>
   </section>
 </template>

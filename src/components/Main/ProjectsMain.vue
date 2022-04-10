@@ -6,7 +6,7 @@
           <Decoration class="py-3" />
           <div>
             <h1 class="py-3">
-              our recent
+              Our recent
               <span class="text_color_color_primary">web designs</span>
               & some examples of past
               <span class="text_color_color_primary">projects</span>

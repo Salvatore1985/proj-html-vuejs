@@ -1,8 +1,8 @@
 <template>
   <section class="p-2">
-    <h3>{{ wrappedLink[0] }}</h3>
+    <h3 class="text-uppercase">{{ wrappedLink[0] }}</h3>
     <Decoration class="py-3" />
-    <ul class="py-4 ps-0">
+    <ul class="py-4 ps-0 text-capitalize">
       <li v-for="(element, index) in wrappedLink" :key="index">
         {{ element.description }}
       </li>

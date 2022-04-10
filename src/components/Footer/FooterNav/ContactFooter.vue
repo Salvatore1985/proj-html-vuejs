@@ -1,9 +1,13 @@
 <template>
-  <section class="p-2">
+  <section class="p-2 text-uppercase">
     <h3>{{ wrappedcontact[0] }}</h3>
     <Decoration class="py-3" />
-    <ul class="ps-0" v-for="(element, index) in wrappedcontact" :key="index">
-      <li class="p-0">
+    <ul
+      class="ps-0 text-capitalize"
+      v-for="(element, index) in wrappedcontact"
+      :key="index"
+    >
+      <li class="p-0 pt-4">
         {{ element }}
       </li>
     </ul>

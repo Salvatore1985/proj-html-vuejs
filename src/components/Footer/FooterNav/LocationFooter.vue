@@ -1,5 +1,5 @@
 <template>
-  <section class="p-2">
+  <section class="p-2 text-uppercase">
     <h3>{{ wrappedLocation[0] }}</h3>
     <Decoration class="py-3" />
     <div class="ps-0 w-100">

@@ -36,7 +36,7 @@
                 <a :href="element.url">
                   <div class="d-flex align-items-center px-2">
                     <span class="p-2"> <i :class="element.icons"></i></span>
-                    <span class="">{{ element.text }}</span>
+                    <span class="text-capitalize">{{ element.text }}</span>
                   </div>
                 </a>
               </li>

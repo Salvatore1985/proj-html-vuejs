@@ -1,6 +1,8 @@
 <template>
   <section class="bg_primary">
-    <h2 class="text-center">lastest news & our <span>blog</span></h2>
+    <h2 class="text-center text-capitalize">
+      lastest news & our <span>blog</span>
+    </h2>
     <div class="d-flex justify-content-center">
       <Decoration class="py-3" />
     </div>
@@ -24,19 +26,19 @@ export default {
       laterstCardList: [
         {
           src: "serious-businesswoman-with-documents-talking-on-P9Q6LX6-1024.jpg",
-          date: "may 24, 2018 .by Alex",
+          date: "May 24, 2018 .by Alex",
           new: "marketing ideas",
           id: "01",
         },
         {
           src: "Businessman-at-the-desk-in-his-office-resting--1024x768.jpg",
-          date: "may 24, 2018 .by Alex",
+          date: "May 24, 2018 .by Alex",
           new: "rest during working hours",
           id: "02",
         },
         {
           src: "simple-home-office-with-tree-PBXRXYB-large-1024x768.jpg",
-          date: "may 24, 2018 .by Alex",
+          date: "May 24, 2018 .by Alex",
           new: "develop your startup idea",
           id: "03",
         },

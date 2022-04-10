@@ -12,8 +12,8 @@
       v-for="(card, index) in listCard"
       :key="index"
     >
-      <p class="p-3">{{ card.request }}</p>
-      <h4 class="p-3">{{ card.text }}</h4>
+      <p class="p-3 text-capitalize">{{ card.request }}</p>
+      <h4 class="p-3 text-capitalize">{{ card.text }}</h4>
       <section class="d-flex flex-column align-items-center">
         <Button
           class="py-3"
