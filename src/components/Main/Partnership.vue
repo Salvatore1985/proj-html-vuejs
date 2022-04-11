@@ -46,6 +46,8 @@ export default {
           text: "strat a new project",
           description:
             " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio porro officiis itaque nesciunt, minima laudantium,",
+          placeholder: "Enter Your Email Address",
+          submit: "submit",
         },
         {
           input: "button",

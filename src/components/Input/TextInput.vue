@@ -36,5 +36,6 @@ input,
 span {
   background-color: #3c3c3c;
   color: #afafaf;
+  cursor: pointer;
 }
 </style>

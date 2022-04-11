@@ -25,8 +25,8 @@
         <TextInput
           class="py-3"
           v-if="card.input === 'text'"
-          :placeholder="'Enter Your Email Address'"
-          :submit="'submit'"
+          :placeholder="card.placeholder"
+          :submit="card.submit"
         />
       </section>
     </section>
