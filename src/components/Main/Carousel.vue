@@ -35,7 +35,9 @@
                 v-for="(element, index) in groupList"
                 :key="index + 'group'"
               >
-                <span>{{ element.id }}</span>
+                <!-- index con formattazione 0 prima del 10 -->
+                <span v-if="index < 9">0{{ index + 1 }}</span>
+                <span v-else>{{ index + 1 }}</span>
               </div>
             </div>
           </div>
@@ -74,17 +76,14 @@ export default {
       indexBtn: 0,
       groupList: [
         {
-          id: "01",
           url: "Group-36-2x.png",
           text: "Group-36-2x",
         },
         {
-          id: "02",
           url: "Group-35-2x.png",
           text: "Group-35-2x",
         },
         {
-          id: "03",
           url: "Group-40-2x.png",
           text: "Group-40-2x",
         },
